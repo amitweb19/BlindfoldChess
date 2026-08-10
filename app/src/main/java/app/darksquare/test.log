@@ -1,0 +1,85 @@
+Executing tasks: [:app:assembleDebug] in project D:\Chess\blindfold
+
+
+> Configure project :app
+AGPBI: {"kind":"warning","text":"The option setting 'android.builtInKotlin=false' is deprecated.\nThe current default is 'true'.\nIt will be removed in version 10.0 of the Android Gradle plugin.","sources":[{}]}
+AGPBI: {"kind":"warning","text":"The option setting 'android.newDsl=false' is deprecated.\nThe current default is 'true'.\nIt will be removed in version 10.0 of the Android Gradle plugin.","sources":[{}]}
+AGPBI: {"kind":"warning","text":"API 'applicationVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.\nIt will be removed in version 10.0 of the Android Gradle plugin.\nThe legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding \n    android.newDsl=false\nto this project's gradle.properties file.\nFor more information, see http://developer.android.com/build/r/new-dsl.\n\nTo determine what is calling applicationVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.","sources":[{}]}
+AGPBI: {"kind":"warning","text":"API 'testVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.\nIt will be removed in version 10.0 of the Android Gradle plugin.\nThe legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding \n    android.newDsl=false\nto this project's gradle.properties file.\nFor more information, see http://developer.android.com/build/r/new-dsl.\n\nTo determine what is calling testVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.","sources":[{}]}
+AGPBI: {"kind":"warning","text":"API 'unitTestVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.\nIt will be removed in version 10.0 of the Android Gradle plugin.\nThe legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding \n    android.newDsl=false\nto this project's gradle.properties file.\nFor more information, see http://developer.android.com/build/r/new-dsl.\n\nTo determine what is calling unitTestVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.","sources":[{}]}
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:generateDebugGlobalSynthetics UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+
+> Task :app:compileDebugKotlin FAILED
+w: Language version 1.9 is deprecated and its support will be removed in a future version of Kotlin
+e: file:///D:/Chess/blindfold/app/src/main/java/app/darksquare/blindfold/data/UserPhonemeStore.kt:60:37 Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public fun <T> Array<out TypeVariable(T)>.takeLast(n: Int): List<TypeVariable(T)> defined in kotlin.collections
+public fun BooleanArray.takeLast(n: Int): List<Boolean> defined in kotlin.collections
+public fun ByteArray.takeLast(n: Int): List<Byte> defined in kotlin.collections
+public fun CharArray.takeLast(n: Int): List<Char> defined in kotlin.collections
+public fun CharSequence.takeLast(n: Int): CharSequence defined in kotlin.text
+public fun DoubleArray.takeLast(n: Int): List<Double> defined in kotlin.collections
+public fun FloatArray.takeLast(n: Int): List<Float> defined in kotlin.collections
+public fun IntArray.takeLast(n: Int): List<Int> defined in kotlin.collections
+public fun LongArray.takeLast(n: Int): List<Long> defined in kotlin.collections
+public fun ShortArray.takeLast(n: Int): List<Short> defined in kotlin.collections
+public fun String.takeLast(n: Int): String defined in kotlin.text
+public fun UByteArray.takeLast(n: Int): List<UByte> defined in kotlin.collections
+public fun UIntArray.takeLast(n: Int): List<UInt> defined in kotlin.collections
+public fun ULongArray.takeLast(n: Int): List<ULong> defined in kotlin.collections
+public fun UShortArray.takeLast(n: Int): List<UShort> defined in kotlin.collections
+public fun <T> List<TypeVariable(T)>.takeLast(n: Int): List<TypeVariable(T)> defined in kotlin.collections
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 19s
+35 actionable tasks: 5 executed, 30 up-to-date

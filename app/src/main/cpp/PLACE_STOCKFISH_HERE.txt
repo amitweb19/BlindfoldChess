@@ -1,0 +1,29 @@
+Place upstream source here:
+
+  app/src/main/cpp/stockfish/
+    src/
+      benchmark.cpp benchmark.h bitboard.cpp bitboard.h
+      engine.cpp engine.h evaluate.cpp evaluate.h
+      history.h main.cpp memory.cpp memory.h
+      misc.cpp misc.h movegen.cpp movegen.h
+      movepick.cpp movepick.h numa.h perft.h
+      position.cpp position.h score.cpp score.h
+      search.cpp search.h shm.h shm_linux.h
+      thread.cpp thread.h thread_win32_osx.h
+      timeman.cpp timeman.h tt.cpp tt.h
+      tune.cpp tune.h types.h
+      uci.cpp uci.h ucioption.cpp ucioption.h
+      incbin/incbin.h
+      nnue/...
+      syzygy/...
+
+i.e. copy the entire `src/` folder from the Stockfish-sf_18 download into
+`app/src/main/cpp/stockfish/src/` exactly as-is. The CMakeLists.txt globs
+all .cpp files automatically and excludes the upstream main.cpp.
+
+Then place the two NNUE network files in app/src/main/assets/ :
+  nn-c288c895ea92.nnue
+  nn-37f18f62d772.nnue
+These are downloaded by the upstream Makefile during a normal build; for
+Android we ship them as assets and copy them to filesDir on first launch
+(see NnueAssetInstaller.kt).
